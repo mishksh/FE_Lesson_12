@@ -68,34 +68,35 @@ header .achievements .unit {
 }
 
 #request {
-  margin: 50px 0;
+  margin: auto 0;
 }
-#request .container {
+#request .info {
   width: 1920px;
   height: 181px;
   background-color: #F7654A;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
+  text-align: center;
 }
 #request h5 {
   font-size: 48px;
   color: #FFFFFF;
   text-transform: uppercase;
-  text-align: left;
 }
-#request p {
+#request h5 .accent {
   font-size: 24px;
   color: #FFFFFF;
-  text-transform: uppercase;
-  text-align: left;
+  display: block;
 }
-#request .button {
+#request h5 .button {
   width: 82px;
   height: 21px;
-  text-align: end;
   border: 2px solid black;
   background-color: white;
   margin-right: 205px;
+  color: #000000;
+  font-size: 14px;
 }
 
 #services {
@@ -144,12 +145,15 @@ header .achievements .unit {
 #contacts .contacts_list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 60px;
 }
 #contacts .contacts_list .item {
   width: 225px;
   height: 190px;
-  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #contacts .item {
   display: flex;
